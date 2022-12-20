@@ -1,0 +1,149 @@
+body {
+    background-color: aquamarine;
+    margin: 0;
+    padding: 0;
+
+}
+
+.maindiv {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    height: 200px;
+    width: 200px;
+    border: 15px solid black;
+    border-radius: 50%;
+    background: white;
+}
+
+.maindiv::before {
+    content: '';
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    left: 50%;
+    height: 10px;
+    border-radius: 5px;
+    animation: animate 4s linear infinite;
+    transform-origin: left;
+}
+
+.maindiv::after {
+    content: '';
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    width: 20%;
+    left: 50%;
+    height: 10px;
+    border-radius: 5px;
+    animation: animate 10s linear infinite;
+    transform-origin: left;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.point {
+    position: absolute;
+    left: 47%;
+    top: 50%;
+    border: 5px solid black;
+    height: 1px;
+    width: 1px;
+    border-radius: 50%;
+}
+
+.a {
+    position: absolute;
+    left: 46%;
+    bottom: 75%;
+
+}
+
+.b {
+    position: absolute;
+    left: 25%;
+    bottom: 68%;
+
+}
+
+.c {
+    position: absolute;
+    left: 10%;
+    bottom: 50%;
+
+}
+
+.d {
+    position: absolute;
+    left: 6%;
+    bottom: 30%;
+
+}
+
+.e {
+    position: absolute;
+    left: 14%;
+    bottom: 12%;
+
+}
+
+.f {
+    position: absolute;
+    left: 28%;
+    top: 70%;
+
+}
+
+.g {
+    position: absolute;
+    left: 46%;
+    top: 78%;
+
+}
+
+.h {
+    position: absolute;
+    left: 68%;
+    top: 71%;
+
+}
+
+.i {
+    position: absolute;
+    left: 80%;
+    bottom: 13%;
+
+}
+
+.j {
+    position: absolute;
+    left: 88%;
+    bottom: 34%;
+
+}
+
+.k {
+    position: absolute;
+    left: 80%;
+    bottom: 53%;
+
+}
+
+.l {
+    position: absolute;
+    left: 68%;
+    bottom: 68%;
+
+}
